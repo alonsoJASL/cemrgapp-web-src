@@ -8,9 +8,10 @@ brew install hugo golang git
 
 Clone repositories and link them to github pages 
 ```
-git clone git@github.com:veganpalsusto/palsusto-web-hugo-source.git palsusto-source-hugo
+git clone git@github.com:alonsojasl/cemrgapp-web-src.git cemrgapp-web-src
+cd cemrgapp-web-src
 git submodule update --init --recursive
-git submodule add -f -b main git@github.com:veganpalsusto/veganpalsusto.github.io.git public
+# git submodule add -f -b main git@github.com:veganpalsusto/veganpalsusto.github.io.git public
 ```
 
 To run locally
