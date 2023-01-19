@@ -1,9 +1,13 @@
 ---
 # Display name
-title: José Alonso Solis-Lemus
+title: Angela Lee
+
+# Username (this should match the folder name)
+authors:
+  - Angela Lee
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: PDRA
@@ -11,28 +15,27 @@ role: PDRA
 # Organizations/Affiliations
 organizations:
   - name: King's College London
-    url: 'https://alonsojasl.github.com'
+    url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include image analysis, computer vision and software development.
+bio: My research includes medical image analysis, computer vision and machine learning with an interest in human in the loop approaches.
 
-# Interests to show in About widget
 interests:
-  - Image Analysis
+  - Medical Image Analysis
   - Computer Vision
-  - Software Development
+  - Machine Learning 
 
-education:
-  courses:
-    - course: PhD in Biomedical Engineering
-      institution: City, University of London
-      year: 2019
-    - course: BSc in Applied Mathematics
-      institution: Instituto Tecnologico Autonomo de Mexico
-      year: 2014
-    - course: BEng in Telematic Engineering
-      institution: Instituto Tecnologico Autonomo de Mexico
-      year: 2013
+# education:
+#   courses:
+#     - course: PhD in Artificial Intelligence
+#       institution: Stanford University
+#       year: 2012
+#     - course: MEng in Artificial Intelligence
+#       institution: Massachusetts Institute of Technology
+#       year: 2009
+#     - course: BSc in Artificial Intelligence
+#       institution: Massachusetts Institute of Technology
+#       year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -44,7 +47,7 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/jsolislemus
+    link: https://twitter.com/OrodRazeghi
   - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: ai
     link: https://scholar.google.com/citations?hl=en&user=2_095cQAAAAJ
@@ -58,17 +61,14 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'alonso.jasl@gmail.com'
-
-# Highlight the author in author lists? (true/false)
-highlight_name: false
+email: ''
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Developers
-  # - Researchers
 ---
 
-José Alonso Solis-Lemus is a post-doctoral research associate at King's College London, at the  **Cardiac Electro-Mechanics Research Group** (CEMRG). 
-His research interests include image analysis, computer vision and software development. He is one of the lead developers of [CemrgApp](https://www.cemrgapp.com).
+Orod Razeghi is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

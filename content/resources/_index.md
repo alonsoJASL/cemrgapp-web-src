@@ -1,12 +1,11 @@
 ---
-title: Latest News
+title: Resources
 
 # Listing view
-view: compact
+view: citation
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:
   caption: ''
   image: ''
 ---
-Hello
