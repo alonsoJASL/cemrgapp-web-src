@@ -1,11 +1,14 @@
 ---
 title: Scar Quantification
-summary: Extimate Fibrosis from a pair of CEMRA and LGE-CMR scans.
+summary: Estimate Fibrosis from a pair of CEMRA and LGE-CMR scans.
 tags:
   - mri
   - atria
   - machine learning
-date: '2016-04-27T00:00:00Z'
+date: '2016-01-01'
+
+authors: 
+  - 
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -15,29 +18,34 @@ image:
   focal_point: Smart
 
 links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
+  - icon: file
+    icon_pack: fas
+    name: PAR
+    url: 'https://github.com/CemrgAppDevelopers/resources/blob/main/par/Rigid_MRI.cfg'
 url_code: ''
-url_pdf: ''
+url_pdf: 'https://github.com/CemrgAppDevelopers/resources/blob/main/sop/CemrgApp-AtrialScarProcessing.pdf'
 url_slides: ''
-url_video: ''
+url_video: 'https://www.youtube.com/watch?v=JtbA0wBcqd8'
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ""
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+Atrial fibrillation (AF) is a heart condition that causes an irregular and often abnormally fast heart rate. Fibrosis is a major contributor to sustained AF. Late gadolinium enhancement (LGE) cardiac magnetic resonance imaging (CMR) is currently the only available tool for its non-invasive assessment. This plugin was developed to facilitate, visualise and validate the multiple analysis steps required for the assessment of fibrosis and quantification of scarred tissue.
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+The plugin contains data processing toolkits, which perform resampling, automatic segmentation, rigid registration and transformation of images, bespoke smoothing of segmentations, LGE image interrogation, and assessment of fibrosis. All these steps are automated in an end-to-end workflow.
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+The workflow contains a multi-label convolutional neural network (CNN), designed to accurately delineate atrial structures including the blood pool, pulmonary veins and mitral valve. The output from the network removes the user dependent steps and allows for reproducible quantification of fibrosis from scans.
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+The network was trained and tested on a dataset of 207 manually labelled scans and a 
+ Dice score was achieved for atrial blood pool segmentation. The network was also checked against the “2018 Atrial Segmentation Challenge” dataset to evaluate its potential limitations on analysing different scans from a different centre. The network without any retraining on the challenge dataset achieved a Dice score of 
+. Retraining the network on this dataset achieved a Dice score of 0.89. Testing the network against the “2013 Left Atrial Segmentation Challenge” yielded a Dice score of 
+. Although our results show the robustness of the network when tested against these multi-centre datasets, there will be cases, where the network fails. In such cases, the user has the option to use the MITK manual segmentation tools and carry on with the rest of fibrosis quantification process.
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+The network was trained on 2D slices extracted from the 3D scans using a dedicated GPU machine. At the run time, the plugin initially slices the scan into 2D images, performs the prediction using the pretrained network, and finally puts the results back together. This method has been used in previous medical segmentation methods and helps with keeping the method computationally tractable without losing significant performance.
+
+Additionally, the “Advanced Calculations” toolkit of this plugin can quantify extra features in the scar tissue, with an emphasis on the tissue’s status before and after pulmonary vein isolation (PVI). PVI is a common ablation procedure that prevents abnormal electrical signals from activating the atrium by electrically isolating the pulmonary veins. A successful ablation produces a lesion encircling the veins that stops the activation.

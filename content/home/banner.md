@@ -15,22 +15,22 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to the CemrgApp page
+    - title: Welcome
       content: Slide to download our latest stable release...
       align: center
       background:
-        position: right
+        position: top
         color: '#666'
-        brightness: 0.7
-        media: coders.jpg
+        brightness: 0.8
+        media: screenshot_scar.png
     - title: Download Linux
       content: ''
-      align: left
+      align: center
       background:
         position: center
         color: '#555'
         brightness: 0.7
-        media: contact.jpg
+        media: cemrgapp_banner.png
       link:
         icon: ubuntu
         icon_pack: fab
@@ -43,7 +43,7 @@ content:
         position: center
         color: '#555'
         brightness: 0.7
-        media: contact.jpg
+        media: cemrgapp_banner.png
       link:
         icon: apple
         icon_pack: fab
@@ -51,12 +51,12 @@ content:
         url: https://github.com/CemrgAppDevelopers/CemrgApp/releases/download/v2.2/CemrgApp-macOS-v2.2.dmg
     - title: Download Windows
       content: ''
-      align: right
+      align: center
       background:
         position: center
         color: '#555'
         brightness: 0.7
-        media: contact.jpg
+        media: cemrgapp_banner.png
       link:
         icon: windows
         icon_pack: fab
@@ -69,7 +69,7 @@ content:
         position: center
         color: '#555'
         brightness: 0.7
-        media: contact.jpg
+        media: cemrgapp_banner.png
       link:
         icon: github
         icon_pack: fab

@@ -11,9 +11,9 @@ weight: 12
 
 title: CermgApp Perspectives
 subtitle: |
-    CemrgApp has different perspectives, small apps with a specific purpose. 
-    Check the [Resources](../resources) page to learn more. 
-    Currently, the available perspectives are:
+    CemrgApp has different **perspectives**, small apps with a specific purpose. 
+    Check the [Resources](https://cemrgappdevelopers.github.io/CemrgApp/resources/)
+    page to learn more. Currently, the available perspectives are: 
 
 content:
   # Page type to display. E.g. project.
@@ -55,7 +55,3 @@ design:
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false
 ---
-
-CemrgApp has different **perspectives**, small apps with a specific purpose. 
-Check the [Resources](https://cemrgappdevelopers.github.io/CemrgApp/resources/)
-page to learn more. Currently, the available perspectives are: 

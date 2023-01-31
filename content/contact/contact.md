@@ -10,7 +10,9 @@ headless: true
 weight: 10
 
 title: Contact
-subtitle:
+subtitle: |
+  CemrgApp is an interdisciplinary project, with active collaborators on different universities. 
+  You can contact us on the different channels in this page.
 
 content:
   # Contact (edit or remove options as required)
@@ -41,6 +43,10 @@ content:
      icon_pack: fas
      name: Report bugs and issues
      link: 'https://github.com/CemrgAppDevelopers/CemrgApp/issues'
+   - icon: website
+     icon_pack: fab
+     name: Group website
+     link: 'https://cemrg.com'
 
   # Automatically link email and phone or display as text?
   autolink: true
@@ -58,5 +64,3 @@ design:
   columns: '2'
 ---
 
-CemrgApp is an interdisciplinary project, with active collaborators on different universities. 
-You can contact us on the different channels below.
